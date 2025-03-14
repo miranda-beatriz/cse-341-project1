@@ -6,7 +6,7 @@ const doc = {
         description: 'Users Api'
     },
     host: 'https://contacts-kcii.onrender.com',
-    schemes: ['https', 'http']
+    schemes: [ 'https']
 };
 
 const outputFile = './swagger.json';
