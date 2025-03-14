@@ -14,8 +14,8 @@ Content-Type: application/json
     "firstName": "Beatriz",
     "lastName": "Miranda",
     "email": "beatriz.miranda@gmail.com",
-    "favoriteColor": "green",
-    "birthday": "2001-09-20"
+    "favoriteColor": "blue",
+    "birthday": "2001-04-26"
 }
 
 ### Update a contact by ID
