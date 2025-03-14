@@ -5,7 +5,7 @@ const doc = {
         title: 'Users Api',
         description: 'Users Api'
     },
-    host: 'https://contacts-kcii.onrender.com',
+    host: 'contacts-kcii.onrender.com',
     schemes: [ 'https']
 };
 
