@@ -1,11 +1,24 @@
 require('dotenv').config();
 
 const express = require('express');
-
+const bodyParser = require('body-parser');
 const mongodb = require('./data/database');
 const app = express();
 
 const port = process.env.PORT || 3000;
+
+app.use(bodyParser.json());
+app.use(express.json());
+
+app.use((req, res, next) => {
+  res.setHeader('Acess-Control-Allow-Origin', '*');
+  res.setHeader(
+    'Acess-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept, Z-Key'
+  );
+  res.setHeader('Acess-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  next();
+})
 
 app.use('/', require('./routes'));
 
